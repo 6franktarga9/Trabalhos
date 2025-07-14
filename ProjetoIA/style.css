@@ -1,0 +1,131 @@
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e0b12;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #1e1b26; /* Fundo escuro */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #ff0000ca; /* Amarelo dourado */
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+}
+
+/* Estilo da navegação */
+nav a {
+    text-decoration: none;
+    color: #366aa6; /* Azul */
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #366aa6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ffd700;
+    color: #333;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #ffcc00;
+}
+/* Estilo do carrossel de filmes */
+#output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.movie-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.movie {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.movie img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo das setas */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+nav a:hover {
+    color: #ffd700; /* Amarelo ao passar o mouse */
+    transition: color 0.3s ease
+}
+
+
+/* Ajustes responsivos */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+}
