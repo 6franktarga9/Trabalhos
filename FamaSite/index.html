@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesIndex.css">
+    <title>Fama - Faculdade de Martinópolis</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="headerPrincipal">
+        <div id="logoFama">
+            <img src="imagens/Screenshot_4.png" alt="Logo Fama" width="95" height="auto">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <button class="dropdown-btn">Fama <span class="arrow">▼</span></button>
+                    <ul class="dropdown-content">
+                        <li><a href="#home2">Sobre</a></li>
+                        <li><a href="#home1">Campus</a></li>
+                        <li><a href="#home3">MEC</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Discente <span class="arrow">▼</span></button>
+                    <ul class="dropdown-content">
+                        <li><a href="#edital">Edital</a></li>
+                        <li><a href="#calendario">Calendário Acadêmico</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Graduação <span class="arrow">▼</span></button>
+                    <ul class="dropdown-content">
+                        <li><a href="#direito">Direito</a></li>
+                        <li><a href="#psicologia">...</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Contato <span class="arrow">▼</span></button>
+                    <ul class="dropdown-content">
+                        <li><a href="#telefone">Telefone</a></li>
+                        <li><a href="#email">E-mail</a></li>
+                        <li><a href="#zap">Whatsapp</a></li>
+                        <li><a href="#insta">Instagram</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="vestibular.html">
+                        <button class="button">Seja Fama</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="conteudoPrincipal">
+        <div class="carousel">
+            <button class="carousel-btn prev" aria-label="Imagem anterior">❮</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <div class="text-overlay">
+                            <h2>Texto sobre a imagem</h2>
+                            <a href="#" class="button">Saiba Mais</a>
+                        </div>
+                        <img src="imagens/carrossel.jpg" alt="Exemplo de imagem 1">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="imagens/carrossel2.jpeg" alt="Exemplo de imagem 2">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="imagens/carrossel3.jpeg" alt="Exemplo de imagem 3">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-btn next" aria-label="Próxima imagem">❯</button>
+        </div>
+
+        <!-- Imagens com Links Abaixo do Carrossel -->
+        <div class="image-links">
+            <a href="vestibular.html" class="bolsa-link">
+                <img src="imagens/bolsa.png" alt="Concurso de Bolsa">
+            </a>
+            <a href="vestibular.html" class="vestibular-link">
+                <img src="imagens/diploma.jpeg" alt="Portador de Diploma">
+            </a>
+            <a href="vestibular.html" class="enem-link">
+                <img src="imagens/enem.jpeg" alt= "Enem">
+            </a>
+        </div>
+    </main>
+</body>
+</html>

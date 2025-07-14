@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesVestibular.css">
+    <script src="scriptVestibular.js" defer></script>
+    <title>Formulário Vestibular</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="headerPrincipal">
+        <div id="logoFama">
+            <a href="index.html">
+               <img src="imagens/Screenshot_4.png" alt="Logo Fama" width="95" height="auto">
+            </a>
+        </div>
+    </header>
+
+    <!-- Formulário -->
+    <main>
+        <div class="container">
+            <div class="box-esquerdo">
+                <div class="box-esquerdo-conteudo">
+                    <h1>
+                        INSCREVA-SE JÁ!
+                    </h1>
+                    <h2>
+                        E GANHE ATÉ 50% DE BOLSA
+                    </h2>
+                    <form id="formVestibular">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX" required>
+
+                        <label for="podeLigar">Podemos ligar para você?</label>
+                        <select id="podeLigar" name="podeLigar">
+                            <option value="nao">Não</option>
+                            <option value="sim">Sim</option>
+                        </select>
+
+                        <div id="horaLigacao" style="display:none;">
+                            <label for="hora">Qual o melhor horário para ligarmos?</label>
+                            <select id="hora" name="hora">
+                                <option value="manha">Manhã</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noite">Noite</option>
+                            </select>
+                        </div>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <div id="mensagemSucesso" style="display:none; color: green; margin-top: 10px;">Formulário enviado com sucesso!</div>
+                </div>
+            </div>
+            <div class="box-direito">
+                <h3>Outras formas de ingresso </h3>
+                <p>Vestibular online da Fama</p><br>
+                <a href="https://vestibularonline.com.br/Vestibular/DadosPessoais">
+                    <button id="vestOnline">
+                        Clique aqui e faça a prova 100% On-line
+                    </button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
